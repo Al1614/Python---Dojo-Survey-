@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.container2{
+    width: 400px;
+    height: 600px;
+    margin: 50px;
+    border-style: solid;
+    border-width: 10px;
+    background-color: slategray;
+}
+
+.header {
+    color: darkorange;
+}
+
+form {
+    padding: 20px;
+    height: 600px;
+    width: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.form1, .form2, .form3, .form4 {
+    margin: 5px;
+    width: 275px;
+    height: 25px;
+    margin: 5px;
+}
+
+    /* width: 275px;
+    height: 25px;
+    margin: 5px;
+} */
+
+.sub{ 
+    margin: 50px;
+}
+.submits{
+    width:90px;
+    height: 30px;
+    background-color: darkorange;
+    box-shadow: 4px 4px black;
+}
+.namebox, .selectbox, .selectbox1{
+    width: 300px;
+    height: 25px;
+    margin: 10px;
+}

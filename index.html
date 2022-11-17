@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+    <title>Dojo Survey</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container2">
+            <form action= '/process' method="post">
+                <h1 class="header">Dojo Survey</h1>
+                <div class="form1">
+                    <p><label for="name">Name:</label></p>
+                    <input type="text" class="namebox" name="name">
+                </div>
+                <div class="form2">
+                        <p><label for="location">Dojo Location:</label></p>
+                        <select name="location" class="selectbox">
+                            <option value="selector">-- Select a Location --</option>
+                            <option value="Chicago">Chicago</option>
+                            <option value="New york">New York</option>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Online">Online</option>
+                        </select>
+                </div>
+                <div class="form3">
+                        <p><label for="language">Favorite Language:</label></p>
+                        <select name="language" class="selectbox1">
+                            <option value="selectors">-- Select a Language --</option>
+                            <option value="Python">Python</option>
+                            <option value="Html">HTML</option>
+                            <option value="Java">Java</option>
+                            <option value="CSS">CSS</option>
+                        </select>
+                </div>
+                <div class="form4">
+                        <p><label for="comments">Comments:</label></p>
+                        <textarea name="comments"rows="6" cols="50">
+                        </textarea>
+                </div>
+                <div class="sub">
+                    <input type="submit" class="submits" value="Submit">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
